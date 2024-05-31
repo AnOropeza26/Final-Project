@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dhiq36wbmyegc"]
 
 [ext_resource type="Script" path="res://gun.gd" id="1_5m7ag"]
-[ext_resource type="Texture2D" uid="uid://cswb5do8rrj7q" path="res://pistol/pistol.png" id="1_t3vce"]
+[ext_resource type="Texture2D" uid="uid://7saaqewvr1cg" path="res://BFBC2_M1911_ICON.webp" id="2_5dv6c"]
 [ext_resource type="PackedScene" uid="uid://dokoiurtk7qri" path="res://bullet.tscn" id="3_2k2ui"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sc4kg"]
@@ -19,13 +19,14 @@ shape = SubResource("CircleShape2D_sc4kg")
 position = Vector2(68, -12)
 
 [node name="Pistol" type="Sprite2D" parent="WeaponPivot"]
-position = Vector2(58, -0.999999)
+position = Vector2(-51, 31)
 rotation = -0.0106406
-texture = ExtResource("1_t3vce")
+scale = Vector2(0.331747, 0.393452)
+texture = ExtResource("2_5dv6c")
 
 [node name="ShootingPoint" type="Marker2D" parent="WeaponPivot/Pistol"]
 unique_name_in_owner = true
-position = Vector2(25.1156, -10.7334)
+position = Vector2(214.508, -93.1676)
 
 [node name="Bullet" parent="WeaponPivot/Pistol/ShootingPoint" instance=ExtResource("3_2k2ui")]
 
